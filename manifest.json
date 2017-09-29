@@ -1,0 +1,19 @@
+{
+
+  "description": "Removes signature from sent mails in protonmail free account",
+  "manifest_version": 2,
+  "name": "ProSig",
+  "version": "0.1",
+  "homepage_url": "https://github.com/kskarthik",
+  "icons": {
+    "32": "icons/i32.png",
+    "64": "icons/i64.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://mail.protonmail.com/*"],
+      "js": ["prosig.js"]
+    }
+  ]
+}
