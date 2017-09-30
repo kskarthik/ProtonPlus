@@ -4,16 +4,16 @@
   "manifest_version": 2,
   "name": "ProSig",
   "version": "0.1",
-  "homepage_url": "https://github.com/kskarthik",
+  "homepage_url": "https://github.com/kskarthik/ProSig",
   "icons": {
     "32": "icons/i32.png",
     "64": "icons/i64.png"
   },
-
+  
   "content_scripts": [
     {
       "matches": ["https://mail.protonmail.com/*"],
-      "css": ["prosig.css"]
+      "js": ["prosig.js"]
     }
   ]
 }
