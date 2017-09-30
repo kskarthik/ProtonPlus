@@ -12,8 +12,8 @@
 
   "content_scripts": [
     {
-      "matches": ["*://mail.protonmail.com/*"],
-      "js": ["prosig.js"]
+      "matches": ["https://mail.protonmail.com/*"],
+      "css": ["prosig.css"]
     }
   ]
 }
