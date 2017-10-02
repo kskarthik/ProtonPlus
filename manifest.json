@@ -6,14 +6,14 @@
   "version": "0.1",
   "homepage_url": "https://github.com/kskarthik/ProSig",
   "icons": {
-    "32": "icons/i32.png",
-    "64": "icons/i64.png"
+    "32": "i32.png",
+    "64": "i64.png"
   },
-  
+
   "content_scripts": [
     {
-      "matches": ["https://mail.protonmail.com/*"],
-      "js": ["prosig.js"]
+      "matches": ["*://mail.protonmail.com/*"],
+      "js": ["inject.js"]
     }
   ]
 }
