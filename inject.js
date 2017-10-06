@@ -12,14 +12,11 @@ let script = document.createElement('script');
      function Hide() { 
 
              let id = document.getElementById("pm_composer");
-             let cl = getElementsByClassName("protonmail_signature_block-proton");
+             let cl = document.getElementsByClassName("protonmail_signature_block-proton");
                 id.cl.innerHTML=" "; // id.cl.setAttribute = ("style", "display: none");  
-              };
-  
-        
-          
-         `;
-      
+               cl[0].innerHTML="";              
+};
+
        document.head.appendChild(script); 
  
 //function hidesig() { sig = document.getElementsByClassName('protonmail_signature_block-proton'); sig.parentNode.removeChild(sig); } document.getElementsByClassName('compose').onlick = function() { hidesig(); }
