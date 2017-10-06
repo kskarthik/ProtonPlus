@@ -1,23 +1,23 @@
 let script = document.createElement('script');
      script.type = 'text/javascript';  
-     script.textContent = `
+      script.textContent = `
+      
+     Start();
+     
       function Start() { 
          
-         document.body.getElementsByClassName("compose").onclick = (function () { Hide(); });
+         document.body.getElementsByClassName("compose")[0].onclick = (function () { Hide(); });
          
          }; 
-          
-          Start();
      
-     function Hide() { 
+          function Hide() { 
 
              let id = document.getElementById("pm_composer");
-             let cl = document.getElementsByClassName("protonmail_signature_block-proton");
-                id.cl.innerHTML=" "; // id.cl.setAttribute = ("style", "display: none");  
-               cl[0].innerHTML="";              
-};
+               let cl = document.getElementsByClassName("protonmail_signature_block-proton");
+                
+                  id.cl[0].innerHTML = " "; 
+                    cl[0].innerHTML=" ";              
+};`;
 
-       document.head.appendChild(script); 
- 
-//function hidesig() { sig = document.getElementsByClassName('protonmail_signature_block-proton'); sig.parentNode.removeChild(sig); } document.getElementsByClassName('compose').onlick = function() { hidesig(); }
+    document.head.appendChild(script); 
 
