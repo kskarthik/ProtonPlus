@@ -3,9 +3,9 @@
   "description": "Modifies appearance of protonmail website",
   "manifest_version": 2,
   "name": "Proton+",
-  "version": "0.1",
+  "version": "0.3",
   "author": "Sai Karthik",
-  "homepage_url": "https://github.com/kskarthik/ProSig",
+  "homepage_url": "https://github.com/kskarthik/ProtonPlus",
   "icons": {
     "32": "i32.png",
     "64": "i64.png"
