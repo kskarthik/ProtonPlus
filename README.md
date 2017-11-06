@@ -1,3 +1,3 @@
 # Proton+
 
-Customizes protonmail website
+Customizes protonmail web app
