@@ -3,15 +3,17 @@
 'use strict';
 
 // change color of compose button
-function colorCompose(){
+function colorCompose() {
+
 	document.getElementsByClassName("compose")[0].style.backgroundColor = "#d11919";
-    
-          Replace();
+        Replace();
 }
-setInterval(colorCompose, 3000);
+
+setInterval(colorCompose, 3000); // all functions run at 3 second intervals
 
 // replace glyphicon with appropriate one 
 function Replace() {
+	
 	let x = document.getElementsByClassName("fa-life-ring")[0];
 
          x.classList.add("fa-bug");	 
@@ -20,7 +22,6 @@ function Replace() {
 }
 
 // remove protonmail signature
-
 function hideSig() {
         
          x = document.getElementsByTagName("iframe")[0];
