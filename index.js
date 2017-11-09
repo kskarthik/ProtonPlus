@@ -16,13 +16,17 @@ function Replace() {
 
          x.classList.add("fa-bug");	 
          x.classList.remove("fa-life-ring");
-         lockFooter();
 }
 
-// lock footer on mobile site
-function lockFooter() {
-    document.getElementsByTagName("footer")[0].style.position = "fixed";
-    
+// remove protonmail signature
+
+function hideSig() {
+        
+         x = document.getElementsByTagName("iframe");
+         y = document.getElementsByClassName("protonmail_signature_block-proton")[0];
+
+         x[0].contentWindow.y.innerHTML = " ";
+
 }
     
 // change compose color on mobile site
