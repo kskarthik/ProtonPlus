@@ -16,16 +16,17 @@ function Replace() {
 
          x.classList.add("fa-bug");	 
          x.classList.remove("fa-life-ring");
+         hideSig();
 }
 
 // remove protonmail signature
 
 function hideSig() {
         
-         x = document.getElementsByTagName("iframe");
+         x = document.getElementsByTagName("iframe")[0];
          y = document.getElementsByClassName("protonmail_signature_block-proton")[0];
 
-         x[0].contentWindow.y.innerHTML = " ";
+         x.contentWindow.y.innerHTML = " ";
 
 }
     
