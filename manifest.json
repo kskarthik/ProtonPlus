@@ -1,9 +1,9 @@
 {
   
-  "description": "Modifies appearance of protonmail web app",
+  "description": "Removes 'sent from protonmail' signature for free accounts",
   "manifest_version": 2,
-  "name": "Proton+",
-  "version": "0.3",
+  "name": "Proton+: Remove Protonmail signature",
+  "version": "0.4.2",
   "author": "Sai Karthik",
   "homepage_url": "https://github.com/kskarthik/ProtonPlus",
   "icons": {
@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.protonmail.com/*"],
-      "js": ["index.js"]
+      "js": ["proton.js"]
     }
   ]
 }
