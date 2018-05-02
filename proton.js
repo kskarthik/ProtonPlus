@@ -36,10 +36,10 @@ function removeSig() {
 				   frame.document.getElementsByClassName("protonmail_signature_block-proton")[0].remove();
  }
 }    
-// change compose color on mobile site
+// change compose color on mobile site, unlock all fields in edit contacts 
 let style = document.createElement("style"); 
         
            style.type = "text/css";
-           style.textContent = ".headerSecuredMobile-compose {background-color: #d11919;}";
+           style.textContent = ".headerSecuredMobile-compose {background-color: #d11919;} .contactDetails-fields-locked {display: none;}";
            
            document.body.appendChild(style);
