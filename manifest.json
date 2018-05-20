@@ -1,17 +1,17 @@
 {
-  
-  "description": "Removes 'sent from protonmail' signature for free accounts",
-  "manifest_version": 2,
-  "name": "Proton+: Remove Protonmail signature",
-  "version": "0.4.3",
-  "author": "Sai Karthik",
-  "homepage_url": "https://github.com/kskarthik/ProtonPlus",
-  "icons": {
+"name": "Proton+ for protonmail",  
+"description": "Unlocks paid features of protonmail",
+"manifest_version": 2,
+"version": "0.4.4",
+"author": "Sai Karthik",
+"homepage_url": "https://github.com/kskarthik/ProtonPlus",
+
+"icons": {
     "32": "i32.png",
     "64": "i64.png"
-  },
+},
 
-  "content_scripts": [
+"content_scripts": [
     {
       "matches": ["*://*.protonmail.com/*"],
       "js": ["proton.js"]
